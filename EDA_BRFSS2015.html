@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Análisis Exploratorio de Indicadores de Salud y Factores Asociados a Enfermedades Cardíacas en la Encuesta BRFSS 2015</title>
   <meta name="description" content="Análisis Exploratorio de Indicadores de Salud y Factores Asociados a Enfermedades Cardíacas en la Encuesta BRFSS 2015" />
-  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown #bookdown:version# and GitBook 2.6.7" />
 
   <meta property="og:title" content="Análisis Exploratorio de Indicadores de Salud y Factores Asociados a Enfermedades Cardíacas en la Encuesta BRFSS 2015" />
   <meta property="og:type" content="book" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<!--bookdown:link_prev-->
+<!--bookdown:link_next-->
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -41,14 +41,14 @@
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
-
-
-
-
-
-
-
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
@@ -135,62 +135,71 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
+<!--bookdown:title:start-->
+<div id="header">
+<h1 class="title">Análisis Exploratorio de Indicadores de Salud y Factores Asociados a Enfermedades Cardíacas en la Encuesta BRFSS 2015</h1>
+<p class="author"><em>Alvarado Natalia y Mujica Camilo</em></p>
+<p class="date"><em>2026-04-06</em></p>
+</div>
+<!--bookdown:title:end-->
+
+<!--bookdown:toc:start-->
   <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
 
     <div class="book-summary">
       <nav role="navigation">
-
-<ul class="summary">
-<li class="chapter" data-level="1" data-path=""><a href="#introducci%C3%B3n"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
-<li class="chapter" data-level="2" data-path=""><a href="#objetivo-general"><i class="fa fa-check"></i><b>2</b> Objetivo general</a>
+<!--bookdown:toc2:start-->
 <ul>
-<li class="chapter" data-level="2.1" data-path=""><a href="#objetivos-espec%C3%ADficos"><i class="fa fa-check"></i><b>2.1</b> Objetivos específicos</a></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path=""><a href="#marco-te%C3%B3rico"><i class="fa fa-check"></i><b>3</b> Marco Teórico</a>
+<li><a href="#introducci%C3%B3n" id="toc-introducción"><span class="toc-section-number">1</span> Introducción</a></li>
+<li><a href="#objetivo-general" id="toc-objetivo-general"><span class="toc-section-number">2</span> Objetivo general</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path=""><a href="#enfermedades-card%C3%ADacas-e-insuficiencia-card%C3%ADaca"><i class="fa fa-check"></i><b>3.1</b> Enfermedades cardíacas e insuficiencia cardíaca</a></li>
-<li class="chapter" data-level="3.2" data-path=""><a href="#el-sistema-brfss-como-fuente-de-datos"><i class="fa fa-check"></i><b>3.2</b> El sistema BRFSS como fuente de datos</a></li>
-<li class="chapter" data-level="3.3" data-path=""><a href="#an%C3%A1lisis-exploratorio-de-datos-eda"><i class="fa fa-check"></i><b>3.3</b> Análisis exploratorio de datos (EDA)</a></li>
+<li><a href="#objetivos-espec%C3%ADficos" id="toc-objetivos-específicos"><span class="toc-section-number">2.1</span> Objetivos específicos</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path=""><a href="#metodolog%C3%ADas-de-los-an%C3%A1lisis"><i class="fa fa-check"></i><b>4</b> Metodologías de los análisis</a></li>
-<li class="chapter" data-level="5" data-path=""><a href="#carga-y-estructura-del-dataset"><i class="fa fa-check"></i><b>5</b> Carga y estructura del dataset</a>
+<li><a href="#marco-te%C3%B3rico" id="toc-marco-teórico"><span class="toc-section-number">3</span> Marco Teórico</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path=""><a href="#estructura"><i class="fa fa-check"></i><b>5.1</b> Estructura</a></li>
-<li class="chapter" data-level="5.2" data-path=""><a href="#definir-variables-binarias-ordinales-y-continuas"><i class="fa fa-check"></i><b>5.2</b> Definir variables binarias, ordinales y continuas</a></li>
-<li class="chapter" data-level="5.3" data-path=""><a href="#conversi%C3%B3n-de-etiquetas"><i class="fa fa-check"></i><b>5.3</b> Conversión de etiquetas</a></li>
-<li class="chapter" data-level="5.4" data-path=""><a href="#diccionario-de-datos"><i class="fa fa-check"></i><b>5.4</b> Diccionario de datos</a></li>
+<li><a href="#enfermedades-card%C3%ADacas-e-insuficiencia-card%C3%ADaca" id="toc-enfermedades-cardíacas-e-insuficiencia-cardíaca"><span class="toc-section-number">3.1</span> Enfermedades cardíacas e insuficiencia cardíaca</a></li>
+<li><a href="#el-sistema-brfss-como-fuente-de-datos" id="toc-el-sistema-brfss-como-fuente-de-datos"><span class="toc-section-number">3.2</span> El sistema BRFSS como fuente de datos</a></li>
+<li><a href="#an%C3%A1lisis-exploratorio-de-datos-eda" id="toc-análisis-exploratorio-de-datos-eda"><span class="toc-section-number">3.3</span> Análisis exploratorio de datos (EDA)</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path=""><a href="#limpieza"><i class="fa fa-check"></i><b>6</b> Limpieza</a>
+<li><a href="#metodolog%C3%ADas-de-los-an%C3%A1lisis" id="toc-metodologías-de-los-análisis"><span class="toc-section-number">4</span> Metodologías de los análisis</a></li>
+<li><a href="#carga-y-estructura-del-dataset" id="toc-carga-y-estructura-del-dataset"><span class="toc-section-number">5</span> Carga y estructura del dataset</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path=""><a href="#valores-nulos"><i class="fa fa-check"></i><b>6.1</b> Valores nulos</a></li>
-<li class="chapter" data-level="6.2" data-path=""><a href="#duplicados"><i class="fa fa-check"></i><b>6.2</b> Duplicados</a></li>
-<li class="chapter" data-level="6.3" data-path=""><a href="#verificaci%C3%B3n-de-rangos-esperados"><i class="fa fa-check"></i><b>6.3</b> Verificación de rangos esperados</a></li>
+<li><a href="#estructura" id="toc-estructura"><span class="toc-section-number">5.1</span> Estructura</a></li>
+<li><a href="#definir-variables-binarias-ordinales-y-continuas" id="toc-definir-variables-binarias-ordinales-y-continuas"><span class="toc-section-number">5.2</span> Definir variables binarias, ordinales y continuas</a></li>
+<li><a href="#conversi%C3%B3n-de-etiquetas" id="toc-conversión-de-etiquetas"><span class="toc-section-number">5.3</span> Conversión de etiquetas</a></li>
+<li><a href="#diccionario-de-datos" id="toc-diccionario-de-datos"><span class="toc-section-number">5.4</span> Diccionario de datos</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path=""><a href="#an%C3%A1lisis-univariado"><i class="fa fa-check"></i><b>7</b> Análisis Univariado</a>
+<li><a href="#limpieza" id="toc-limpieza"><span class="toc-section-number">6</span> Limpieza</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path=""><a href="#variable-objetivo"><i class="fa fa-check"></i><b>7.1</b> Variable Objetivo</a></li>
-<li class="chapter" data-level="7.2" data-path=""><a href="#variables-binarias"><i class="fa fa-check"></i><b>7.2</b> Variables Binarias</a></li>
-<li class="chapter" data-level="7.3" data-path=""><a href="#variables-ordinales"><i class="fa fa-check"></i><b>7.3</b> Variables Ordinales</a></li>
-<li class="chapter" data-level="7.4" data-path=""><a href="#variables-continuas"><i class="fa fa-check"></i><b>7.4</b> Variables Continuas</a></li>
+<li><a href="#valores-nulos" id="toc-valores-nulos"><span class="toc-section-number">6.1</span> Valores nulos</a></li>
+<li><a href="#duplicados" id="toc-duplicados"><span class="toc-section-number">6.2</span> Duplicados</a></li>
+<li><a href="#verificaci%C3%B3n-de-rangos-esperados" id="toc-verificación-de-rangos-esperados"><span class="toc-section-number">6.3</span> Verificación de rangos esperados</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path=""><a href="#an%C3%A1lisis-bivariado"><i class="fa fa-check"></i><b>8</b> Análisis Bivariado</a>
+<li><a href="#an%C3%A1lisis-univariado" id="toc-análisis-univariado"><span class="toc-section-number">7</span> Análisis Univariado</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path=""><a href="#correlaci%C3%B3n-global-con-la-variable-objetivo"><i class="fa fa-check"></i><b>8.1</b> Correlación global con la variable objetivo</a></li>
-<li class="chapter" data-level="8.2" data-path=""><a href="#variables-binarias-1"><i class="fa fa-check"></i><b>8.2</b> Variables Binarias</a></li>
-<li class="chapter" data-level="8.3" data-path=""><a href="#variables-ordinales-1"><i class="fa fa-check"></i><b>8.3</b> Variables Ordinales</a></li>
-<li class="chapter" data-level="8.4" data-path=""><a href="#variables-continuas-1"><i class="fa fa-check"></i><b>8.4</b> Variables Continuas</a></li>
-<li class="chapter" data-level="8.5" data-path=""><a href="#interacciones-entre-factores-de-riesgo"><i class="fa fa-check"></i><b>8.5</b> Interacciones entre factores de riesgo</a></li>
-<li class="chapter" data-level="8.6" data-path=""><a href="#ranking-de-importancia-de-variables"><i class="fa fa-check"></i><b>8.6</b> Ranking de importancia de variables</a></li>
+<li><a href="#variable-objetivo" id="toc-variable-objetivo"><span class="toc-section-number">7.1</span> Variable Objetivo</a></li>
+<li><a href="#variables-binarias" id="toc-variables-binarias"><span class="toc-section-number">7.2</span> Variables Binarias</a></li>
+<li><a href="#variables-ordinales" id="toc-variables-ordinales"><span class="toc-section-number">7.3</span> Variables Ordinales</a></li>
+<li><a href="#variables-continuas" id="toc-variables-continuas"><span class="toc-section-number">7.4</span> Variables Continuas</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path=""><a href="#s%C3%ADntesis-y-hallazgos-principales"><i class="fa fa-check"></i><b>9</b> Síntesis y Hallazgos Principales</a>
+<li><a href="#an%C3%A1lisis-bivariado" id="toc-análisis-bivariado"><span class="toc-section-number">8</span> Análisis Bivariado</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path=""><a href="#factores-con-mayor-asociaci%C3%B3n"><i class="fa fa-check"></i><b>9.1</b> Factores con mayor asociación</a></li>
-<li class="chapter" data-level="9.2" data-path=""><a href="#interacciones-sin%C3%A9rgicas"><i class="fa fa-check"></i><b>9.2</b> Interacciones sinérgicas</a></li>
-<li class="chapter" data-level="9.3" data-path=""><a href="#implicaciones-para-la-futura-modelaci%C3%B3n"><i class="fa fa-check"></i><b>9.3</b> Implicaciones para la futura modelación</a></li>
+<li><a href="#correlaci%C3%B3n-global-con-la-variable-objetivo" id="toc-correlación-global-con-la-variable-objetivo"><span class="toc-section-number">8.1</span> Correlación global con la variable objetivo</a></li>
+<li><a href="#variables-binarias-1" id="toc-variables-binarias-1"><span class="toc-section-number">8.2</span> Variables Binarias</a></li>
+<li><a href="#variables-ordinales-1" id="toc-variables-ordinales-1"><span class="toc-section-number">8.3</span> Variables Ordinales</a></li>
+<li><a href="#variables-continuas-1" id="toc-variables-continuas-1"><span class="toc-section-number">8.4</span> Variables Continuas</a></li>
+<li><a href="#interacciones-entre-factores-de-riesgo" id="toc-interacciones-entre-factores-de-riesgo"><span class="toc-section-number">8.5</span> Interacciones entre factores de riesgo</a></li>
+<li><a href="#ranking-de-importancia-de-variables" id="toc-ranking-de-importancia-de-variables"><span class="toc-section-number">8.6</span> Ranking de importancia de variables</a></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path=""><a href="#referencias-bibliogr%C3%A1ficas"><i class="fa fa-check"></i><b>10</b> Referencias bibliográficas</a></li>
+<li><a href="#s%C3%ADntesis-y-hallazgos-principales" id="toc-síntesis-y-hallazgos-principales"><span class="toc-section-number">9</span> Síntesis y Hallazgos Principales</a>
+<ul>
+<li><a href="#factores-con-mayor-asociaci%C3%B3n" id="toc-factores-con-mayor-asociación"><span class="toc-section-number">9.1</span> Factores con mayor asociación</a></li>
+<li><a href="#interacciones-sin%C3%A9rgicas" id="toc-interacciones-sinérgicas"><span class="toc-section-number">9.2</span> Interacciones sinérgicas</a></li>
+<li><a href="#implicaciones-para-la-futura-modelaci%C3%B3n" id="toc-implicaciones-para-la-futura-modelación"><span class="toc-section-number">9.3</span> Implicaciones para la futura modelación</a></li>
+</ul></li>
+<li><a href="#referencias-bibliogr%C3%A1ficas" id="toc-referencias-bibliográficas"><span class="toc-section-number">10</span> Referencias bibliográficas</a></li>
 </ul>
-
+<!--bookdown:toc2:end-->
       </nav>
     </div>
 
@@ -206,19 +215,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Análisis Exploratorio de Indicadores de Salud y Factores Asociados a Enfermedades Cardíacas en la Encuesta BRFSS 2015</h1>
-<p class="author"><em>Alvarado Natalia y Mujica Camilo</em></p>
-<p class="date"><em>2026-04-06</em></p>
-</div>
+<!--bookdown:toc:end-->
+<!--bookdown:body:start-->
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="fu">library</span>(scales)</span>
 <span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
 <span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
-<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="fu">library</span>(coin)       <span class="co"># Mann-Whitney exacto</span></span>
-<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a><span class="fu">library</span>(rstatix)    <span class="co"># Chi2 + V de Cramer</span></span>
-<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="fu">library</span>(corrplot)</span>
-<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="fu">library</span>(coin)    </span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a><span class="fu">library</span>(rstatix)    </span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="fu">library</span>(servr)</span>
 <span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a></span>
 <span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a><span class="co"># Paleta principal</span></span>
 <span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a>col_rojo  <span class="ot">&lt;-</span> <span class="st">&quot;#C0392B&quot;</span></span>
@@ -227,17 +233,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a>nude_pal  <span class="ot">&lt;-</span> <span class="fu">c</span>(col_rojo, col_azul)</span></code></pre></div>
 <hr />
 <div id="introducción" class="section level2 hasAnchor" number="1">
-<h2><span class="header-section-number">1</span> Introducción<a href="#introducci%C3%B3n" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2 class="hasAnchor"><span class="header-section-number">1</span> Introducción<a href="#introducci%C3%B3n" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Las enfermedades cardíacas representan la principal causa de muerte en Estados Unidos, cobrando aproximadamente 647.000 vidas cada año y generando una de las mayores cargas económicas y sanitarias del país. A diferencia de otras enfermedades, la cardiopatía coronaria avanza de forma silenciosa: la acumulación de placa en las arterias, la inflamación crónica, la hipertensión y la diabetes deterioran el sistema cardiovascular durante años antes de que aparezca cualquier síntoma visible.</p>
 <p>La situación se agrava con una tendencia preocupante en la población joven. Un estudio reciente de la American Heart Association reportó que las muertes hospitalarias por infarto severo en adultos menores de 55 años aumentaron un 57% entre 2011 y 2022. Las mujeres jóvenes presentaron tasas de mortalidad más altas que los hombres del mismo grupo etario, frecuentemente asociadas a factores no tradicionales como los bajos ingresos.</p>
 <p>El dataset empleado corresponde a la versión depurada del BRFSS 2015, con 253.680 registros y 21 variables que incluyen indicadores como el índice de masa corporal, actividad física, tabaquismo, consumo de alcohol, presión arterial, colesterol, diabetes, acceso a atención médica y características sociodemográficas.</p>
 <hr />
 </div>
 <div id="objetivo-general" class="section level2 hasAnchor" number="2">
-<h2><span class="header-section-number">2</span> Objetivo general<a href="#objetivo-general" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2 class="hasAnchor"><span class="header-section-number">2</span> Objetivo general<a href="#objetivo-general" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Examinar, a través de técnicas de análisis exploratorio y visualización de datos, qué factores conductuales, clínicos y sociodemográficos presentan mayor asociación con el riesgo de enfermedad cardíaca en adultos estadounidenses, detectando patrones, contrastes entre grupos y variables con mayor capacidad explicativa como base para una futura modelación predictiva.</p>
 <div id="objetivos-específicos" class="section level3 hasAnchor" number="2.1">
-<h3><span class="header-section-number">2.1</span> Objetivos específicos<a href="#objetivos-espec%C3%ADficos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">2.1</span> Objetivos específicos<a href="#objetivos-espec%C3%ADficos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Describir la distribución de las variables clínicas, conductuales y sociodemográficas presentes en el BRFSS 2015, identificando frecuencias, proporciones y posibles valores atípicos.</li>
 <li>Analizar el desbalance de clases en la variable objetivo (<code>HeartDiseaseorAttack</code>) y evaluar su implicación para el análisis y la futura modelación.</li>
@@ -248,29 +254,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <div id="marco-teórico" class="section level2 hasAnchor" number="3">
-<h2><span class="header-section-number">3</span> Marco Teórico<a href="#marco-te%C3%B3rico" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2 class="hasAnchor"><span class="header-section-number">3</span> Marco Teórico<a href="#marco-te%C3%B3rico" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="enfermedades-cardíacas-e-insuficiencia-cardíaca" class="section level3 hasAnchor" number="3.1">
-<h3><span class="header-section-number">3.1</span> Enfermedades cardíacas e insuficiencia cardíaca<a href="#enfermedades-card%C3%ADacas-e-insuficiencia-card%C3%ADaca" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">3.1</span> Enfermedades cardíacas e insuficiencia cardíaca<a href="#enfermedades-card%C3%ADacas-e-insuficiencia-card%C3%ADaca" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>La insuficiencia cardíaca es un trastorno en el que el corazón es incapaz de satisfacer las demandas del organismo, lo que genera una reducción del flujo sanguíneo y congestión en venas y pulmones. Puede originarse por causas directas —como el debilitamiento o rigidez del músculo cardíaco— o indirectas, producto de condiciones como la hipertensión arterial, la diabetes o valvulopatías.</p>
 </div>
 <div id="el-sistema-brfss-como-fuente-de-datos" class="section level3 hasAnchor" number="3.2">
-<h3><span class="header-section-number">3.2</span> El sistema BRFSS como fuente de datos<a href="#el-sistema-brfss-como-fuente-de-datos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">3.2</span> El sistema BRFSS como fuente de datos<a href="#el-sistema-brfss-como-fuente-de-datos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>El Sistema de Vigilancia de Factores de Riesgo Conductuales (BRFSS) es el principal sistema nacional de encuestas telefónicas sobre salud en Estados Unidos, administrado por los CDC desde 1984. Recopila datos en los 50 estados con más de 400.000 entrevistas a adultos cada año.</p>
 </div>
 <div id="análisis-exploratorio-de-datos-eda" class="section level3 hasAnchor" number="3.3">
-<h3><span class="header-section-number">3.3</span> Análisis exploratorio de datos (EDA)<a href="#an%C3%A1lisis-exploratorio-de-datos-eda" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">3.3</span> Análisis exploratorio de datos (EDA)<a href="#an%C3%A1lisis-exploratorio-de-datos-eda" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>El análisis exploratorio de datos (EDA) es un enfoque metodológico que permite examinar conjuntos de datos para resumir sus características principales, descubrir patrones, detectar anomalías y evaluar supuestos antes de aplicar técnicas de modelado formal. Desarrollado por John Tukey en la década de 1970, emplea principalmente métodos de visualización estadística para revelar relaciones entre variables.</p>
 <hr />
 </div>
 </div>
 <div id="metodologías-de-los-análisis" class="section level2 hasAnchor" number="4">
-<h2><span class="header-section-number">4</span> Metodologías de los análisis<a href="#metodolog%C3%ADas-de-los-an%C3%A1lisis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2 class="hasAnchor"><span class="header-section-number">4</span> Metodologías de los análisis<a href="#metodolog%C3%ADas-de-los-an%C3%A1lisis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><strong>Metodología del análisis univariado:</strong> El análisis univariado se realiza según la naturaleza estadística de cada variable. Para variables binarias se calculan frecuencias absolutas y relativas visualizadas en barras verticales. Para variables ordinales se usan barras horizontales preservando el orden natural. Para variables continuas se construye una tabla descriptiva completa (media, mediana, desviación estándar, cuartiles, IQR, outliers) y se representan con histograma (BMI) o barras por valor exacto (MentHlth, PhysHlth).</p>
 <p><strong>Metodología del análisis bivariado:</strong> Se emplean tres estrategias según el tipo estadístico: Chi-cuadrado + V de Cramér para variables binarias y ordinales; Mann-Whitney U para variables continuas dada su distribución asimétrica; y tasas de incidencia por grupo para interpretación clínica directa.</p>
 <hr />
 </div>
 <div id="carga-y-estructura-del-dataset" class="section level2 hasAnchor" number="5">
-<h2><span class="header-section-number">5</span> Carga y estructura del dataset<a href="#carga-y-estructura-del-dataset" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2 class="hasAnchor"><span class="header-section-number">5</span> Carga y estructura del dataset<a href="#carga-y-estructura-del-dataset" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;heart_disease_health_indicators_BRFSS2015.csv&quot;</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Dimensiones:&quot;</span>, <span class="fu">nrow</span>(df), <span class="st">&quot;filas x&quot;</span>, <span class="fu">ncol</span>(df), <span class="st">&quot;columnas</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
@@ -302,15 +308,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## $ Income               &lt;dbl&gt; 3, 1, 8, 6, 4, 8, 7, 4, 1, 3, 8, 1, 7, 6, 2, 8, 3…</code></pre>
 <p>El dataset contiene 253.680 registros y 22 variables. De las 22 variables, 1 corresponde a la variable objetivo (<code>HeartDiseaseorAttack</code>) y las 21 restantes representan factores de riesgo distribuidos entre variables binarias, ordinales y continuas.</p>
 <div id="estructura" class="section level3 hasAnchor" number="5.1">
-<h3><span class="header-section-number">5.1</span> Estructura<a href="#estructura" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">5.1</span> Estructura<a href="#estructura" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
 <span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="fu">across</span>(<span class="fu">everything</span>(), <span class="sc">~</span><span class="fu">class</span>(.x))) <span class="sc">%&gt;%</span></span>
 <span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="fu">everything</span>(), <span class="at">names_to =</span> <span class="st">&quot;Variable&quot;</span>, <span class="at">values_to =</span> <span class="st">&quot;Tipo&quot;</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a>  <span class="fu">kable</span>(<span class="at">caption =</span> <span class="st">&quot;Tipo de dato por variable&quot;</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">bootstrap_options =</span> <span class="fu">c</span>(<span class="st">&quot;striped&quot;</span>, <span class="st">&quot;hover&quot;</span>), <span class="at">full_width =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:estructura">Table 1: </span><span id="tab:estructura">Table 2: </span>Tipo de dato por variable
+(#tab:estructura)(#tab:estructura)Tipo de dato por variable
 </caption>
 <thead>
 <tr>
@@ -504,7 +510,7 @@ numeric
 <p>Aunque todas las variables se almacenan como numéricas (<code>dbl</code>), su naturaleza estadística varía: <code>Sex</code> es nominal binaria, <code>Age</code> es ordinal con 13 categorías, y <code>BMI</code> es genuinamente continua. Clasificarlas correctamente determina qué visualizaciones y estadísticas aplicar.</p>
 </div>
 <div id="definir-variables-binarias-ordinales-y-continuas" class="section level3 hasAnchor" number="5.2">
-<h3><span class="header-section-number">5.2</span> Definir variables binarias, ordinales y continuas<a href="#definir-variables-binarias-ordinales-y-continuas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">5.2</span> Definir variables binarias, ordinales y continuas<a href="#definir-variables-binarias-ordinales-y-continuas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>target_var    <span class="ot">&lt;-</span> <span class="st">&quot;HeartDiseaseorAttack&quot;</span></span>
 <span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a></span>
 <span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>binary_vars <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;HighBP&quot;</span>,<span class="st">&quot;HighChol&quot;</span>,<span class="st">&quot;CholCheck&quot;</span>,<span class="st">&quot;Smoker&quot;</span>,<span class="st">&quot;Stroke&quot;</span>,</span>
@@ -527,7 +533,7 @@ numeric
 <pre><code>## Total clasificadas: 22</code></pre>
 </div>
 <div id="conversión-de-etiquetas" class="section level3 hasAnchor" number="5.3">
-<h3><span class="header-section-number">5.3</span> Conversión de etiquetas<a href="#conversi%C3%B3n-de-etiquetas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">5.3</span> Conversión de etiquetas<a href="#conversi%C3%B3n-de-etiquetas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a>df_1 <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
 <span id="cb17-2"><a href="#cb17-2" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
 <span id="cb17-3"><a href="#cb17-3" tabindex="-1"></a>    <span class="at">HeartDiseaseorAttack =</span> <span class="fu">factor</span>(HeartDiseaseorAttack,</span>
@@ -564,7 +570,7 @@ numeric
 <pre><code>## Conversión completada.</code></pre>
 </div>
 <div id="diccionario-de-datos" class="section level3 hasAnchor" number="5.4">
-<h3><span class="header-section-number">5.4</span> Diccionario de datos<a href="#diccionario-de-datos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">5.4</span> Diccionario de datos<a href="#diccionario-de-datos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a>dict <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
 <span id="cb19-2"><a href="#cb19-2" tabindex="-1"></a>  <span class="at">Variable    =</span> <span class="fu">c</span>(<span class="st">&quot;HeartDiseaseorAttack&quot;</span>,<span class="st">&quot;HighBP&quot;</span>,<span class="st">&quot;HighChol&quot;</span>,<span class="st">&quot;CholCheck&quot;</span>,<span class="st">&quot;BMI&quot;</span>,<span class="st">&quot;Smoker&quot;</span>,</span>
 <span id="cb19-3"><a href="#cb19-3" tabindex="-1"></a>                  <span class="st">&quot;Stroke&quot;</span>,<span class="st">&quot;Diabetes&quot;</span>,<span class="st">&quot;PhysActivity&quot;</span>,<span class="st">&quot;Fruits&quot;</span>,<span class="st">&quot;Veggies&quot;</span>,<span class="st">&quot;HvyAlcoholConsump&quot;</span>,</span>
@@ -596,9 +602,9 @@ numeric
 <span id="cb19-29"><a href="#cb19-29" tabindex="-1"></a>dict <span class="sc">%&gt;%</span></span>
 <span id="cb19-30"><a href="#cb19-30" tabindex="-1"></a>  <span class="fu">kable</span>(<span class="at">caption =</span> <span class="st">&quot;Diccionario de variables&quot;</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb19-31"><a href="#cb19-31" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">bootstrap_options =</span> <span class="fu">c</span>(<span class="st">&quot;striped&quot;</span>,<span class="st">&quot;hover&quot;</span>), <span class="at">full_width =</span> <span class="cn">TRUE</span>, <span class="at">font_size =</span> <span class="dv">12</span>)</span></code></pre></div>
-<table class="table table-striped table-hover" style="font-size: 12px; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover" style="font-size: 12px; color: black; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
-<span id="tab:diccionario">Table 3: </span><span id="tab:diccionario">Table 4: </span>Diccionario de variables
+(#tab:diccionario)(#tab:diccionario)Diccionario de variables
 </caption>
 <thead>
 <tr>
@@ -931,10 +937,10 @@ Ingreso anual del hogar (1=&lt;$10k · 8=≥$75k)
 </div>
 </div>
 <div id="limpieza" class="section level2 hasAnchor" number="6">
-<h2><span class="header-section-number">6</span> Limpieza<a href="#limpieza" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2 class="hasAnchor"><span class="header-section-number">6</span> Limpieza<a href="#limpieza" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Antes de iniciar el análisis exploratorio se verifica la integridad del dataset: ausencia de valores faltantes, duplicados y valores fuera del rango esperado.</p>
 <div id="valores-nulos" class="section level3 hasAnchor" number="6.1">
-<h3><span class="header-section-number">6.1</span> Valores nulos<a href="#valores-nulos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">6.1</span> Valores nulos<a href="#valores-nulos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" tabindex="-1"></a>nulos <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(<span class="fu">across</span>(<span class="fu">everything</span>(), <span class="sc">~</span><span class="fu">sum</span>(<span class="fu">is.na</span>(.)))) <span class="sc">%&gt;%</span></span>
 <span id="cb20-2"><a href="#cb20-2" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="fu">everything</span>(), <span class="at">names_to=</span><span class="st">&quot;Variable&quot;</span>, <span class="at">values_to=</span><span class="st">&quot;Nulos&quot;</span>)</span>
 <span id="cb20-3"><a href="#cb20-3" tabindex="-1"></a></span>
@@ -943,9 +949,9 @@ Ingreso anual del hogar (1=&lt;$10k · 8=≥$75k)
 <div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" tabindex="-1"></a>nulos <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Nulos <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb22-2"><a href="#cb22-2" tabindex="-1"></a>  <span class="fu">kable</span>(<span class="at">caption=</span><span class="st">&quot;Variables con valores nulos&quot;</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb22-3"><a href="#cb22-3" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:nulos">Table 5: </span><span id="tab:nulos">Table 6: </span>Variables con valores nulos
+(#tab:nulos)(#tab:nulos)Variables con valores nulos
 </caption>
 <thead>
 <tr>
@@ -978,7 +984,7 @@ NA
 </table>
 </div>
 <div id="duplicados" class="section level3 hasAnchor" number="6.2">
-<h3><span class="header-section-number">6.2</span> Duplicados<a href="#duplicados" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">6.2</span> Duplicados<a href="#duplicados" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" tabindex="-1"></a>total      <span class="ot">&lt;-</span> <span class="fu">nrow</span>(df)</span>
 <span id="cb23-2"><a href="#cb23-2" tabindex="-1"></a>duplicados <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">duplicated</span>(df))</span>
 <span id="cb23-3"><a href="#cb23-3" tabindex="-1"></a>pct_dup    <span class="ot">&lt;-</span> <span class="fu">round</span>(duplicados <span class="sc">/</span> total <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">2</span>)</span>
@@ -990,9 +996,9 @@ NA
 <span id="cb23-9"><a href="#cb23-9" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
 <span id="cb23-10"><a href="#cb23-10" tabindex="-1"></a>  <span class="fu">kable</span>(<span class="at">caption=</span><span class="st">&quot;Registros duplicados&quot;</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb23-11"><a href="#cb23-11" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:duplicados">Table 7: </span><span id="tab:duplicados">Table 8: </span>Registros duplicados
+(#tab:duplicados)(#tab:duplicados)Registros duplicados
 </caption>
 <thead>
 <tr>
@@ -1024,7 +1030,7 @@ Porcentaje
 <p>Tras la verificación se confirmó la ausencia total de valores nulos. Los 23.899 registros duplicados se conservan porque al tratarse de una encuesta poblacional con mayoría de variables binarias, es estadísticamente esperable que múltiples individuos compartan exactamente el mismo perfil de respuestas sin que esto represente un error de captura.</p>
 </div>
 <div id="verificación-de-rangos-esperados" class="section level3 hasAnchor" number="6.3">
-<h3><span class="header-section-number">6.3</span> Verificación de rangos esperados<a href="#verificaci%C3%B3n-de-rangos-esperados" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">6.3</span> Verificación de rangos esperados<a href="#verificaci%C3%B3n-de-rangos-esperados" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" tabindex="-1"></a>rangos <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
 <span id="cb24-2"><a href="#cb24-2" tabindex="-1"></a>  <span class="at">HeartDiseaseorAttack=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>), <span class="at">HighBP=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>), <span class="at">HighChol=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>),</span>
 <span id="cb24-3"><a href="#cb24-3" tabindex="-1"></a>  <span class="at">CholCheck=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>), <span class="at">BMI=</span><span class="fu">c</span>(<span class="dv">12</span>,<span class="dv">98</span>), <span class="at">Smoker=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>), <span class="at">Stroke=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>),</span>
@@ -1050,9 +1056,9 @@ Porcentaje
 <span id="cb24-23"><a href="#cb24-23" tabindex="-1"></a>  <span class="fu">kable</span>(<span class="at">caption=</span><span class="st">&quot;Verificación de rangos por variable&quot;</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb24-24"><a href="#cb24-24" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="fu">c</span>(<span class="st">&quot;striped&quot;</span>,<span class="st">&quot;hover&quot;</span>), <span class="at">full_width=</span><span class="cn">FALSE</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb24-25"><a href="#cb24-25" tabindex="-1"></a>  <span class="fu">column_spec</span>(<span class="dv">6</span>, <span class="at">color=</span><span class="fu">ifelse</span>(verificacion<span class="sc">$</span>OK, <span class="st">&quot;green&quot;</span>, <span class="st">&quot;red&quot;</span>))</span></code></pre></div>
-<table class="table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:rangos">Table 9: </span><span id="tab:rangos">Table 10: </span>Verificación de rangos por variable
+(#tab:rangos)(#tab:rangos)Verificación de rangos por variable
 </caption>
 <thead>
 <tr>
@@ -1524,11 +1530,11 @@ TRUE
 </div>
 </div>
 <div id="análisis-univariado" class="section level2 hasAnchor" number="7">
-<h2><span class="header-section-number">7</span> Análisis Univariado<a href="#an%C3%A1lisis-univariado" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2 class="hasAnchor"><span class="header-section-number">7</span> Análisis Univariado<a href="#an%C3%A1lisis-univariado" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="variable-objetivo" class="section level3 hasAnchor" number="7.1">
-<h3><span class="header-section-number">7.1</span> Variable Objetivo<a href="#variable-objetivo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">7.1</span> Variable Objetivo<a href="#variable-objetivo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="heartdiseaseorattack-enfermedad-cardíaca" class="section level4 hasAnchor" number="7.1.1">
-<h4><span class="header-section-number">7.1.1</span> HeartDiseaseorAttack: Enfermedad cardíaca<a href="#heartdiseaseorattack-enfermedad-card%C3%ADaca" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.1.1</span> HeartDiseaseorAttack: Enfermedad cardíaca<a href="#heartdiseaseorattack-enfermedad-card%C3%ADaca" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" tabindex="-1"></a>conteos_obj <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
 <span id="cb25-2"><a href="#cb25-2" tabindex="-1"></a>  <span class="fu">count</span>(HeartDiseaseorAttack) <span class="sc">%&gt;%</span></span>
 <span id="cb25-3"><a href="#cb25-3" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
@@ -1548,7 +1554,7 @@ TRUE
 <div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" tabindex="-1"></a>conteos_obj <span class="sc">%&gt;%</span></span>
 <span id="cb26-2"><a href="#cb26-2" tabindex="-1"></a>  <span class="fu">select</span>(Clase, <span class="at">Conteo=</span>n, <span class="st">`</span><span class="at">Porcentaje (%)</span><span class="st">`</span> <span class="ot">=</span> Porcentaje) <span class="sc">%&gt;%</span></span>
 <span id="cb26-3"><a href="#cb26-3" tabindex="-1"></a>  <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -1591,7 +1597,7 @@ Con enfermedad cardíaca
 </div>
 </div>
 <div id="variables-binarias" class="section level3 hasAnchor" number="7.2">
-<h3><span class="header-section-number">7.2</span> Variables Binarias<a href="#variables-binarias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">7.2</span> Variables Binarias<a href="#variables-binarias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" tabindex="-1"></a><span class="co"># Función auxiliar para graficar variables binarias</span></span>
 <span id="cb27-2"><a href="#cb27-2" tabindex="-1"></a>plot_binaria <span class="ot">&lt;-</span> <span class="cf">function</span>(var, etiquetas, titulo) {</span>
 <span id="cb27-3"><a href="#cb27-3" tabindex="-1"></a>  conteos <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
@@ -1616,12 +1622,12 @@ Con enfermedad cardíaca
 <span id="cb27-22"><a href="#cb27-22" tabindex="-1"></a>  <span class="fu">list</span>(<span class="at">plot=</span>p, <span class="at">tabla=</span>tbl)</span>
 <span id="cb27-23"><a href="#cb27-23" tabindex="-1"></a>}</span></code></pre></div>
 <div id="highbp-presión-arterial-alta" class="section level4 hasAnchor" number="7.2.1">
-<h4><span class="header-section-number">7.2.1</span> HighBP: Presión arterial alta<a href="#highbp-presi%C3%B3n-arterial-alta" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.2.1</span> HighBP: Presión arterial alta<a href="#highbp-presi%C3%B3n-arterial-alta" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">plot_binaria</span>(<span class="st">&quot;HighBP&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Sin hipertensión&quot;</span>,<span class="st">&quot;Con hipertensión&quot;</span>), <span class="st">&quot;Distribución de HighBP&quot;</span>)</span>
 <span id="cb28-2"><a href="#cb28-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/highbp-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" tabindex="-1"></a>r<span class="sc">$</span>tabla <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -1663,12 +1669,12 @@ Con hipertensión
 <p>El 57.1% (144.851 personas) no presenta hipertensión, mientras que el 42.9% (108.829 personas) sí ha recibido un diagnóstico de presión arterial alta. Casi la mitad de la muestra convive con hipertensión.</p>
 </div>
 <div id="highchol-colesterol-alto" class="section level4 hasAnchor" number="7.2.2">
-<h4><span class="header-section-number">7.2.2</span> HighChol: Colesterol alto<a href="#highchol-colesterol-alto" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.2.2</span> HighChol: Colesterol alto<a href="#highchol-colesterol-alto" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">plot_binaria</span>(<span class="st">&quot;HighChol&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Sin colesterol alto&quot;</span>,<span class="st">&quot;Con colesterol alto&quot;</span>), <span class="st">&quot;Distribución de HighChol&quot;</span>)</span>
 <span id="cb30-2"><a href="#cb30-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/highchol-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" tabindex="-1"></a>r<span class="sc">$</span>tabla <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -1710,12 +1716,12 @@ Con colesterol alto
 <p>El 57.59% (146.089 personas) no presenta colesterol alto, mientras que el 42.41% (107.591 personas) sí. La distribución es similar a la de HighBP.</p>
 </div>
 <div id="cholcheck-chequeo-del-colesterol" class="section level4 hasAnchor" number="7.2.3">
-<h4><span class="header-section-number">7.2.3</span> CholCheck: Chequeo del colesterol<a href="#cholcheck-chequeo-del-colesterol" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.2.3</span> CholCheck: Chequeo del colesterol<a href="#cholcheck-chequeo-del-colesterol" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">plot_binaria</span>(<span class="st">&quot;CholCheck&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Sin chequeo en 5 años&quot;</span>,<span class="st">&quot;Con chequeo en 5 años&quot;</span>), <span class="st">&quot;Distribución de CholCheck&quot;</span>)</span>
 <span id="cb32-2"><a href="#cb32-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/cholcheck-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" tabindex="-1"></a>r<span class="sc">$</span>tabla <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -1757,12 +1763,12 @@ Con chequeo en 5 años
 <p>El 96.27% (244.210 personas) se realizó un chequeo de colesterol en los últimos 5 años. Distribución marcadamente asimétrica.</p>
 </div>
 <div id="smoker-fumador" class="section level4 hasAnchor" number="7.2.4">
-<h4><span class="header-section-number">7.2.4</span> Smoker: Fumador<a href="#smoker-fumador" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.2.4</span> Smoker: Fumador<a href="#smoker-fumador" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">plot_binaria</span>(<span class="st">&quot;Smoker&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;No fumador&quot;</span>,<span class="st">&quot;Fumador&quot;</span>), <span class="st">&quot;Distribución de Smoker&quot;</span>)</span>
 <span id="cb34-2"><a href="#cb34-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/smoker-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" tabindex="-1"></a>r<span class="sc">$</span>tabla <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -1804,12 +1810,12 @@ Fumador
 <p>El 55.68% (141.257 personas) nunca ha fumado, mientras que el 44.32% (112.423 personas) sí lo ha hecho.</p>
 </div>
 <div id="stroke-derrame-cerebral" class="section level4 hasAnchor" number="7.2.5">
-<h4><span class="header-section-number">7.2.5</span> Stroke: Derrame cerebral<a href="#stroke-derrame-cerebral" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.2.5</span> Stroke: Derrame cerebral<a href="#stroke-derrame-cerebral" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">plot_binaria</span>(<span class="st">&quot;Stroke&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Sin ACV&quot;</span>,<span class="st">&quot;Con ACV&quot;</span>), <span class="st">&quot;Distribución de Stroke&quot;</span>)</span>
 <span id="cb36-2"><a href="#cb36-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/stroke-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" tabindex="-1"></a>r<span class="sc">$</span>tabla <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -1851,12 +1857,12 @@ Con ACV
 <p>El 95.94% (243.388 personas) no ha sufrido un derrame cerebral; apenas el 4.06% (10.292 personas) sí lo ha reportado.</p>
 </div>
 <div id="physactivity-actividad-física" class="section level4 hasAnchor" number="7.2.6">
-<h4><span class="header-section-number">7.2.6</span> PhysActivity: Actividad física<a href="#physactivity-actividad-f%C3%ADsica" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.2.6</span> PhysActivity: Actividad física<a href="#physactivity-actividad-f%C3%ADsica" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">plot_binaria</span>(<span class="st">&quot;PhysActivity&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Sin actividad física&quot;</span>,<span class="st">&quot;Con actividad física&quot;</span>), <span class="st">&quot;Distribución de PhysActivity&quot;</span>)</span>
 <span id="cb38-2"><a href="#cb38-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/physactivity-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" tabindex="-1"></a>r<span class="sc">$</span>tabla <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -1898,12 +1904,12 @@ Con actividad física
 <p>El 75.65% (191.920 personas) reportó actividad física en los últimos 30 días; el 24.35% (61.760 personas) no lo hizo.</p>
 </div>
 <div id="fruits-consumo-de-frutas" class="section level4 hasAnchor" number="7.2.7">
-<h4><span class="header-section-number">7.2.7</span> Fruits: Consumo de Frutas<a href="#fruits-consumo-de-frutas" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.2.7</span> Fruits: Consumo de Frutas<a href="#fruits-consumo-de-frutas" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">plot_binaria</span>(<span class="st">&quot;Fruits&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;No consume frutas&quot;</span>,<span class="st">&quot;Consume frutas diario&quot;</span>), <span class="st">&quot;Distribución de Fruits&quot;</span>)</span>
 <span id="cb40-2"><a href="#cb40-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/fruits-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" tabindex="-1"></a>r<span class="sc">$</span>tabla <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -1945,12 +1951,12 @@ Consume frutas diario
 <p>El 63.43% (160.898 personas) consume frutas al menos una vez al día; el 36.57% (92.782 personas) no lo hace.</p>
 </div>
 <div id="veggies-consumo-de-vegetales" class="section level4 hasAnchor" number="7.2.8">
-<h4><span class="header-section-number">7.2.8</span> Veggies: Consumo de Vegetales<a href="#veggies-consumo-de-vegetales" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.2.8</span> Veggies: Consumo de Vegetales<a href="#veggies-consumo-de-vegetales" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">plot_binaria</span>(<span class="st">&quot;Veggies&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;No consume verduras&quot;</span>,<span class="st">&quot;Consume verduras diario&quot;</span>), <span class="st">&quot;Distribución de Veggies&quot;</span>)</span>
 <span id="cb42-2"><a href="#cb42-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/veggies-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" tabindex="-1"></a>r<span class="sc">$</span>tabla <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -1992,12 +1998,12 @@ Consume verduras diario
 <p>El 81.14% (205.841 personas) consume verduras al menos una vez al día.</p>
 </div>
 <div id="hvyalcoholconsump-consumo-de-alcohol" class="section level4 hasAnchor" number="7.2.9">
-<h4><span class="header-section-number">7.2.9</span> HvyAlcoholConsump: Consumo de alcohol<a href="#hvyalcoholconsump-consumo-de-alcohol" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.2.9</span> HvyAlcoholConsump: Consumo de alcohol<a href="#hvyalcoholconsump-consumo-de-alcohol" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">plot_binaria</span>(<span class="st">&quot;HvyAlcoholConsump&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;No consumo alto&quot;</span>,<span class="st">&quot;Consumo alto alcohol&quot;</span>), <span class="st">&quot;Distribución de HvyAlcoholConsump&quot;</span>)</span>
 <span id="cb44-2"><a href="#cb44-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/alcohol-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" tabindex="-1"></a>r<span class="sc">$</span>tabla <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -2039,12 +2045,12 @@ Consumo alto alcohol
 <p>El 94.38% (239.424 personas) no presenta consumo excesivo de alcohol.</p>
 </div>
 <div id="anyhealthcare-cobertura-médica" class="section level4 hasAnchor" number="7.2.10">
-<h4><span class="header-section-number">7.2.10</span> AnyHealthcare: Cobertura médica<a href="#anyhealthcare-cobertura-m%C3%A9dica" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.2.10</span> AnyHealthcare: Cobertura médica<a href="#anyhealthcare-cobertura-m%C3%A9dica" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">plot_binaria</span>(<span class="st">&quot;AnyHealthcare&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Sin cobertura médica&quot;</span>,<span class="st">&quot;Con cobertura médica&quot;</span>), <span class="st">&quot;Distribución de AnyHealthcare&quot;</span>)</span>
 <span id="cb46-2"><a href="#cb46-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/healthcare-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" tabindex="-1"></a>r<span class="sc">$</span>tabla <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -2086,12 +2092,12 @@ Con cobertura médica
 <p>El 95.11% (241.263 personas) cuenta con algún tipo de cobertura médica.</p>
 </div>
 <div id="nodocbccost-barrera-económica" class="section level4 hasAnchor" number="7.2.11">
-<h4><span class="header-section-number">7.2.11</span> NoDocbcCost: Barrera económica<a href="#nodocbccost-barrera-econ%C3%B3mica" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.2.11</span> NoDocbcCost: Barrera económica<a href="#nodocbccost-barrera-econ%C3%B3mica" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">plot_binaria</span>(<span class="st">&quot;NoDocbcCost&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Sin barrera económica&quot;</span>,<span class="st">&quot;Con barrera económica&quot;</span>), <span class="st">&quot;Distribución de NoDocbcCost&quot;</span>)</span>
 <span id="cb48-2"><a href="#cb48-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/nodoc-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" tabindex="-1"></a>r<span class="sc">$</span>tabla <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -2133,12 +2139,12 @@ Con barrera económica
 <p>El 91.58% (232.326 personas) no enfrentó barreras económicas para acceder al médico en el último año.</p>
 </div>
 <div id="diffwalk-dificultad-al-caminar" class="section level4 hasAnchor" number="7.2.12">
-<h4><span class="header-section-number">7.2.12</span> DiffWalk: Dificultad al caminar<a href="#diffwalk-dificultad-al-caminar" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.2.12</span> DiffWalk: Dificultad al caminar<a href="#diffwalk-dificultad-al-caminar" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">plot_binaria</span>(<span class="st">&quot;DiffWalk&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Sin dificultad al caminar&quot;</span>,<span class="st">&quot;Con dificultad al caminar&quot;</span>), <span class="st">&quot;Distribución de DiffWalk&quot;</span>)</span>
 <span id="cb50-2"><a href="#cb50-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/diffwalk-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" tabindex="-1"></a>r<span class="sc">$</span>tabla <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -2180,12 +2186,12 @@ Con dificultad al caminar
 <p>El 83.18% (211.005 personas) no presenta dificultad para caminar; el 16.82% (42.675 personas) sí la reporta.</p>
 </div>
 <div id="sex-sexo" class="section level4 hasAnchor" number="7.2.13">
-<h4><span class="header-section-number">7.2.13</span> Sex: Sexo<a href="#sex-sexo" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.2.13</span> Sex: Sexo<a href="#sex-sexo" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">plot_binaria</span>(<span class="st">&quot;Sex&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Mujer&quot;</span>,<span class="st">&quot;Hombre&quot;</span>), <span class="st">&quot;Distribución de Sex&quot;</span>)</span>
 <span id="cb52-2"><a href="#cb52-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/sex-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" tabindex="-1"></a>r<span class="sc">$</span>tabla <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -2228,7 +2234,7 @@ Hombre
 </div>
 </div>
 <div id="variables-ordinales" class="section level3 hasAnchor" number="7.3">
-<h3><span class="header-section-number">7.3</span> Variables Ordinales<a href="#variables-ordinales" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">7.3</span> Variables Ordinales<a href="#variables-ordinales" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" tabindex="-1"></a><span class="co"># Función auxiliar para variables ordinales (barras horizontales)</span></span>
 <span id="cb54-2"><a href="#cb54-2" tabindex="-1"></a>plot_ordinal <span class="ot">&lt;-</span> <span class="cf">function</span>(var, etiquetas, titulo, <span class="at">colores=</span><span class="cn">NULL</span>) {</span>
 <span id="cb54-3"><a href="#cb54-3" tabindex="-1"></a>  conteos <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
@@ -2250,7 +2256,7 @@ Hombre
 <span id="cb54-19"><a href="#cb54-19" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">legend.position=</span><span class="st">&quot;none&quot;</span>, <span class="at">plot.title=</span><span class="fu">element_text</span>(<span class="at">color=</span><span class="st">&quot;#3a3a3a&quot;</span>, <span class="at">size=</span><span class="dv">12</span>))</span>
 <span id="cb54-20"><a href="#cb54-20" tabindex="-1"></a>}</span></code></pre></div>
 <div id="diabetes" class="section level4 hasAnchor" number="7.3.1">
-<h4><span class="header-section-number">7.3.1</span> Diabetes<a href="#diabetes" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.3.1</span> Diabetes<a href="#diabetes" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" tabindex="-1"></a><span class="fu">plot_ordinal</span>(<span class="st">&quot;Diabetes&quot;</span>,</span>
 <span id="cb55-2"><a href="#cb55-2" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">&quot;Sin diabetes&quot;</span>,<span class="st">&quot;Prediabetes&quot;</span>,<span class="st">&quot;Diabetes confirmada&quot;</span>),</span>
 <span id="cb55-3"><a href="#cb55-3" tabindex="-1"></a>  <span class="st">&quot;Distribución de Diabetes&quot;</span>,</span>
@@ -2259,7 +2265,7 @@ Hombre
 <p>El 84.24% (213.703 personas) no presenta diabetes, el 13.93% (35.346 personas) tiene diabetes confirmada y apenas el 1.83% (4.631 personas) se encuentra en estado de prediabetes.</p>
 </div>
 <div id="genhlth-autopercepción-de-salud-general" class="section level4 hasAnchor" number="7.3.2">
-<h4><span class="header-section-number">7.3.2</span> GenHlth: Autopercepción de salud general<a href="#genhlth-autopercepci%C3%B3n-de-salud-general" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.3.2</span> GenHlth: Autopercepción de salud general<a href="#genhlth-autopercepci%C3%B3n-de-salud-general" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" tabindex="-1"></a><span class="fu">plot_ordinal</span>(<span class="st">&quot;GenHlth&quot;</span>,</span>
 <span id="cb56-2"><a href="#cb56-2" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">&quot;Excelente&quot;</span>,<span class="st">&quot;Muy buena&quot;</span>,<span class="st">&quot;Buena&quot;</span>,<span class="st">&quot;Regular&quot;</span>,<span class="st">&quot;Mala&quot;</span>),</span>
 <span id="cb56-3"><a href="#cb56-3" tabindex="-1"></a>  <span class="st">&quot;Distribución de GenHlth&quot;</span>,</span>
@@ -2268,7 +2274,7 @@ Hombre
 <p>El 35.12% califica su salud como muy buena y el 17.86% como excelente, sumando más de la mitad de la muestra en las dos categorías más favorables.</p>
 </div>
 <div id="age-edad" class="section level4 hasAnchor" number="7.3.3">
-<h4><span class="header-section-number">7.3.3</span> Age: Edad<a href="#age-edad" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.3.3</span> Age: Edad<a href="#age-edad" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" tabindex="-1"></a><span class="fu">plot_ordinal</span>(<span class="st">&quot;Age&quot;</span>,</span>
 <span id="cb57-2"><a href="#cb57-2" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">&quot;18–24&quot;</span>,<span class="st">&quot;25–29&quot;</span>,<span class="st">&quot;30–34&quot;</span>,<span class="st">&quot;35–39&quot;</span>,<span class="st">&quot;40–44&quot;</span>,<span class="st">&quot;45–49&quot;</span>,</span>
 <span id="cb57-3"><a href="#cb57-3" tabindex="-1"></a>    <span class="st">&quot;50–54&quot;</span>,<span class="st">&quot;55–59&quot;</span>,<span class="st">&quot;60–64&quot;</span>,<span class="st">&quot;65–69&quot;</span>,<span class="st">&quot;70–74&quot;</span>,<span class="st">&quot;75–79&quot;</span>,<span class="st">&quot;80+&quot;</span>),</span>
@@ -2277,7 +2283,7 @@ Hombre
 <p>Los grupos con mayor representación son 60–64 años (13.10%), 55–59 años (12.15%) y 65–69 años (12.69%), concentrando casi el 38% de la muestra.</p>
 </div>
 <div id="education-educación" class="section level4 hasAnchor" number="7.3.4">
-<h4><span class="header-section-number">7.3.4</span> Education: Educación<a href="#education-educaci%C3%B3n" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.3.4</span> Education: Educación<a href="#education-educaci%C3%B3n" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" tabindex="-1"></a><span class="fu">plot_ordinal</span>(<span class="st">&quot;Education&quot;</span>,</span>
 <span id="cb58-2"><a href="#cb58-2" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">&quot;Nunca asistió&quot;</span>,<span class="st">&quot;Primaria incompleta&quot;</span>,<span class="st">&quot;Secundaria incompleta&quot;</span>,</span>
 <span id="cb58-3"><a href="#cb58-3" tabindex="-1"></a>    <span class="st">&quot;Secundaria completa&quot;</span>,<span class="st">&quot;Universidad incompleta&quot;</span>,<span class="st">&quot;Universidad completa&quot;</span>),</span>
@@ -2286,7 +2292,7 @@ Hombre
 <p>El 42.31% completó la universidad, siendo el grupo más numeroso. Junto con universidad incompleta (27.56%) representan casi el 70% de la muestra.</p>
 </div>
 <div id="income-ingreso-anual" class="section level4 hasAnchor" number="7.3.5">
-<h4><span class="header-section-number">7.3.5</span> Income: Ingreso Anual<a href="#income-ingreso-anual" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.3.5</span> Income: Ingreso Anual<a href="#income-ingreso-anual" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" tabindex="-1"></a><span class="fu">plot_ordinal</span>(<span class="st">&quot;Income&quot;</span>,</span>
 <span id="cb59-2"><a href="#cb59-2" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">&quot;&lt; $10,000&quot;</span>,<span class="st">&quot;$10,000–15,000&quot;</span>,<span class="st">&quot;$15,000–20,000&quot;</span>,<span class="st">&quot;$20,000–25,000&quot;</span>,</span>
 <span id="cb59-3"><a href="#cb59-3" tabindex="-1"></a>    <span class="st">&quot;$25,000–35,000&quot;</span>,<span class="st">&quot;$35,000–50,000&quot;</span>,<span class="st">&quot;$50,000–75,000&quot;</span>,<span class="st">&quot;$75,000+&quot;</span>),</span>
@@ -2296,9 +2302,9 @@ Hombre
 </div>
 </div>
 <div id="variables-continuas" class="section level3 hasAnchor" number="7.4">
-<h3><span class="header-section-number">7.4</span> Variables Continuas<a href="#variables-continuas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">7.4</span> Variables Continuas<a href="#variables-continuas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="bmi-índice-de-masa-corporal" class="section level4 hasAnchor" number="7.4.1">
-<h4><span class="header-section-number">7.4.1</span> BMI: Índice de Masa Corporal<a href="#bmi-%C3%ADndice-de-masa-corporal" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.4.1</span> BMI: Índice de Masa Corporal<a href="#bmi-%C3%ADndice-de-masa-corporal" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" tabindex="-1"></a>q1_bmi  <span class="ot">&lt;-</span> <span class="fu">quantile</span>(df<span class="sc">$</span>BMI, <span class="fl">0.25</span>)</span>
 <span id="cb60-2"><a href="#cb60-2" tabindex="-1"></a>q3_bmi  <span class="ot">&lt;-</span> <span class="fu">quantile</span>(df<span class="sc">$</span>BMI, <span class="fl">0.75</span>)</span>
 <span id="cb60-3"><a href="#cb60-3" tabindex="-1"></a>iqr_bmi <span class="ot">&lt;-</span> q3_bmi <span class="sc">-</span> q1_bmi</span>
@@ -2325,7 +2331,7 @@ Hombre
 <span id="cb60-24"><a href="#cb60-24" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
 <span id="cb60-25"><a href="#cb60-25" tabindex="-1"></a>  <span class="fu">kable</span>(<span class="at">caption=</span><span class="st">&quot;Estadísticas descriptivas — BMI&quot;</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb60-26"><a href="#cb60-26" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
 (#tab:bmi_stats)(#tab:bmi_stats)Estadísticas descriptivas — BMI
 </caption>
@@ -2464,7 +2470,7 @@ N° outliers
 <p>La distribución presenta asimetría positiva, con la mayor concentración entre 22 y 32.</p>
 </div>
 <div id="menthlth-días-con-mala-salud-mental" class="section level4 hasAnchor" number="7.4.2">
-<h4><span class="header-section-number">7.4.2</span> MentHlth: Días con mala salud mental<a href="#menthlth-d%C3%ADas-con-mala-salud-mental" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.4.2</span> MentHlth: Días con mala salud mental<a href="#menthlth-d%C3%ADas-con-mala-salud-mental" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" tabindex="-1"></a>conteos_mh <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">count</span>(MentHlth) <span class="sc">%&gt;%</span></span>
 <span id="cb62-2"><a href="#cb62-2" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Porcentaje =</span> <span class="fu">round</span>(n<span class="sc">/</span><span class="fu">sum</span>(n)<span class="sc">*</span><span class="dv">100</span>, <span class="dv">1</span>))</span>
 <span id="cb62-3"><a href="#cb62-3" tabindex="-1"></a></span>
@@ -2482,7 +2488,7 @@ N° outliers
 <p>El 69.3% reportó 0 días de mala salud mental. Se observan repuntes en valores redondos (5, 10, 15, 30 días), típicos del autoreporte.</p>
 </div>
 <div id="physhlth-días-con-mala-salud-física" class="section level4 hasAnchor" number="7.4.3">
-<h4><span class="header-section-number">7.4.3</span> PhysHlth: Días con mala salud física<a href="#physhlth-d%C3%ADas-con-mala-salud-f%C3%ADsica" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">7.4.3</span> PhysHlth: Días con mala salud física<a href="#physhlth-d%C3%ADas-con-mala-salud-f%C3%ADsica" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" tabindex="-1"></a>conteos_ph <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">count</span>(PhysHlth) <span class="sc">%&gt;%</span></span>
 <span id="cb63-2"><a href="#cb63-2" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Porcentaje =</span> <span class="fu">round</span>(n<span class="sc">/</span><span class="fu">sum</span>(n)<span class="sc">*</span><span class="dv">100</span>, <span class="dv">1</span>))</span>
 <span id="cb63-3"><a href="#cb63-3" tabindex="-1"></a></span>
@@ -2503,10 +2509,10 @@ N° outliers
 </div>
 </div>
 <div id="análisis-bivariado" class="section level2 hasAnchor" number="8">
-<h2><span class="header-section-number">8</span> Análisis Bivariado<a href="#an%C3%A1lisis-bivariado" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2 class="hasAnchor"><span class="header-section-number">8</span> Análisis Bivariado<a href="#an%C3%A1lisis-bivariado" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Para examinar la relación entre cada variable predictora y <code>HeartDiseaseorAttack</code> se emplean: Chi-cuadrado + V de Cramér para binarias y ordinales, y Mann-Whitney U + correlación de Pearson para continuas.</p>
 <div id="correlación-global-con-la-variable-objetivo" class="section level3 hasAnchor" number="8.1">
-<h3><span class="header-section-number">8.1</span> Correlación global con la variable objetivo<a href="#correlaci%C3%B3n-global-con-la-variable-objetivo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">8.1</span> Correlación global con la variable objetivo<a href="#correlaci%C3%B3n-global-con-la-variable-objetivo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" tabindex="-1"></a>corr_df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
 <span id="cb64-2"><a href="#cb64-2" tabindex="-1"></a>  <span class="fu">select</span>(<span class="fu">all_of</span>(<span class="fu">c</span>(target_var, binary_vars, ordinal_vars, continuous_vars))) <span class="sc">%&gt;%</span></span>
 <span id="cb64-3"><a href="#cb64-3" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">everything</span>(), as.numeric)) <span class="sc">%&gt;%</span></span>
@@ -2531,7 +2537,7 @@ N° outliers
 <p>Las correlaciones más altas son <strong>GenHlth</strong> (0.258), <strong>Age</strong> (0.222), <strong>DiffWalk</strong> (0.213), <strong>HighBP</strong> (0.209) y <strong>Stroke</strong> (0.203). Las negativas más relevantes son <strong>Income</strong> (−0.141), <strong>Education</strong> (−0.100) y <strong>PhysActivity</strong> (−0.087).</p>
 </div>
 <div id="variables-binarias-1" class="section level3 hasAnchor" number="8.2">
-<h3><span class="header-section-number">8.2</span> Variables Binarias<a href="#variables-binarias-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">8.2</span> Variables Binarias<a href="#variables-binarias-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" tabindex="-1"></a><span class="co"># Función bivariada para variables binarias</span></span>
 <span id="cb65-2"><a href="#cb65-2" tabindex="-1"></a>biv_binaria <span class="ot">&lt;-</span> <span class="cf">function</span>(var, etiquetas, titulo) {</span>
 <span id="cb65-3"><a href="#cb65-3" tabindex="-1"></a>  tasa <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
@@ -2565,12 +2571,12 @@ N° outliers
 <span id="cb65-31"><a href="#cb65-31" tabindex="-1"></a>  <span class="fu">list</span>(<span class="at">plot=</span>p, <span class="at">metricas=</span>metricas)</span>
 <span id="cb65-32"><a href="#cb65-32" tabindex="-1"></a>}</span></code></pre></div>
 <div id="highbp" class="section level4 hasAnchor" number="8.2.1">
-<h4><span class="header-section-number">8.2.1</span> HighBP<a href="#highbp" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">8.2.1</span> HighBP<a href="#highbp" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb66"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">biv_binaria</span>(<span class="st">&quot;HighBP&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Sin hipertensión&quot;</span>,<span class="st">&quot;Con hipertensión&quot;</span>), <span class="st">&quot;HighBP&quot;</span>)</span>
 <span id="cb66-2"><a href="#cb66-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/biv_highbp-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" tabindex="-1"></a>r<span class="sc">$</span>metricas <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -2627,12 +2633,12 @@ Tasa (Con hipertensión)
 <p>La hipertensión <strong>cuadruplica</strong> la tasa de enfermedad cardíaca (16.47% vs 4.12%). Con V de Cramér de 0.2093, es la segunda variable binaria con mayor asociación.</p>
 </div>
 <div id="highchol" class="section level4 hasAnchor" number="8.2.2">
-<h4><span class="header-section-number">8.2.2</span> HighChol<a href="#highchol" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">8.2.2</span> HighChol<a href="#highchol" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">biv_binaria</span>(<span class="st">&quot;HighChol&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Sin colesterol alto&quot;</span>,<span class="st">&quot;Con colesterol alto&quot;</span>), <span class="st">&quot;HighChol&quot;</span>)</span>
 <span id="cb68-2"><a href="#cb68-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/biv_highchol-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" tabindex="-1"></a>r<span class="sc">$</span>metricas <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -2689,12 +2695,12 @@ Tasa (Con colesterol alto)
 <p>El colesterol alto <strong>triplica</strong> la tasa de HD (15.57% vs 4.89%), con V=0.1808.</p>
 </div>
 <div id="cholcheck" class="section level4 hasAnchor" number="8.2.3">
-<h4><span class="header-section-number">8.2.3</span> CholCheck<a href="#cholcheck" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">8.2.3</span> CholCheck<a href="#cholcheck" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">biv_binaria</span>(<span class="st">&quot;CholCheck&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Sin chequeo en 5 años&quot;</span>,<span class="st">&quot;Con chequeo en 5 años&quot;</span>), <span class="st">&quot;CholCheck&quot;</span>)</span>
 <span id="cb70-2"><a href="#cb70-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/biv_cholcheck-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" tabindex="-1"></a>r<span class="sc">$</span>metricas <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -2751,12 +2757,12 @@ Tasa (Con chequeo en 5 años)
 <p>La asociación es débil (V=0.0442) y refleja un sesgo de detección: quienes se chequearon tienen más diagnósticos por mayor exposición al sistema de salud.</p>
 </div>
 <div id="smoker" class="section level4 hasAnchor" number="8.2.4">
-<h4><span class="header-section-number">8.2.4</span> Smoker<a href="#smoker" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">8.2.4</span> Smoker<a href="#smoker" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb72"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb72-1"><a href="#cb72-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">biv_binaria</span>(<span class="st">&quot;Smoker&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;No fumador&quot;</span>,<span class="st">&quot;Fumador&quot;</span>), <span class="st">&quot;Smoker&quot;</span>)</span>
 <span id="cb72-2"><a href="#cb72-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/biv_smoker-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1" tabindex="-1"></a>r<span class="sc">$</span>metricas <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -2813,12 +2819,12 @@ Tasa (Fumador)
 <p>Los fumadores <strong>duplican</strong> la tasa de HD (13.17% vs 6.44%), con V=0.1144.</p>
 </div>
 <div id="stroke" class="section level4 hasAnchor" number="8.2.5">
-<h4><span class="header-section-number">8.2.5</span> Stroke<a href="#stroke" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">8.2.5</span> Stroke<a href="#stroke" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb74"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb74-1"><a href="#cb74-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">biv_binaria</span>(<span class="st">&quot;Stroke&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Sin ACV&quot;</span>,<span class="st">&quot;Con ACV&quot;</span>), <span class="st">&quot;Stroke&quot;</span>)</span>
 <span id="cb74-2"><a href="#cb74-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/biv_stroke-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1" tabindex="-1"></a>r<span class="sc">$</span>metricas <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -2875,12 +2881,12 @@ Tasa (Con ACV)
 <p>El antecedente de ACV tiene la <strong>tasa absoluta más alta</strong> entre las variables binarias (38.25%), con V=0.2030.</p>
 </div>
 <div id="physactivity" class="section level4 hasAnchor" number="8.2.6">
-<h4><span class="header-section-number">8.2.6</span> PhysActivity<a href="#physactivity" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">8.2.6</span> PhysActivity<a href="#physactivity" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb76"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">biv_binaria</span>(<span class="st">&quot;PhysActivity&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Sin actividad física&quot;</span>,<span class="st">&quot;Con actividad física&quot;</span>), <span class="st">&quot;PhysActivity&quot;</span>)</span>
 <span id="cb76-2"><a href="#cb76-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/biv_physactivity-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1" tabindex="-1"></a>r<span class="sc">$</span>metricas <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -2937,12 +2943,12 @@ Tasa (Con actividad física)
 <p>La inactividad física <strong>casi duplica</strong> la tasa de HD (13.91% vs 7.97%), con V=0.0873.</p>
 </div>
 <div id="fruits" class="section level4 hasAnchor" number="8.2.7">
-<h4><span class="header-section-number">8.2.7</span> Fruits<a href="#fruits" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">8.2.7</span> Fruits<a href="#fruits" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb78-1"><a href="#cb78-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">biv_binaria</span>(<span class="st">&quot;Fruits&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;No consume frutas&quot;</span>,<span class="st">&quot;Consume frutas diario&quot;</span>), <span class="st">&quot;Fruits&quot;</span>)</span>
 <span id="cb78-2"><a href="#cb78-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/biv_fruits-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" tabindex="-1"></a>r<span class="sc">$</span>metricas <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -2999,12 +3005,12 @@ Tasa (Consume frutas diario)
 <p>Asociación muy débil (V=0.0198); la diferencia de tasas es marginal (10.18% vs 8.98%).</p>
 </div>
 <div id="veggies" class="section level4 hasAnchor" number="8.2.8">
-<h4><span class="header-section-number">8.2.8</span> Veggies<a href="#veggies" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">8.2.8</span> Veggies<a href="#veggies" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">biv_binaria</span>(<span class="st">&quot;Veggies&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;No consume verduras&quot;</span>,<span class="st">&quot;Consume verduras diario&quot;</span>), <span class="st">&quot;Veggies&quot;</span>)</span>
 <span id="cb80-2"><a href="#cb80-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/biv_veggies-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="#cb81-1" tabindex="-1"></a>r<span class="sc">$</span>metricas <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -3061,12 +3067,12 @@ Tasa (Consume verduras diario)
 <p>Asociación significativa pero de magnitud baja (V=0.0392).</p>
 </div>
 <div id="hvyalcoholconsump" class="section level4 hasAnchor" number="8.2.9">
-<h4><span class="header-section-number">8.2.9</span> HvyAlcoholConsump<a href="#hvyalcoholconsump" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">8.2.9</span> HvyAlcoholConsump<a href="#hvyalcoholconsump" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb82"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb82-1"><a href="#cb82-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">biv_binaria</span>(<span class="st">&quot;HvyAlcoholConsump&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Sin consumo excesivo&quot;</span>,<span class="st">&quot;Consumo excesivo&quot;</span>), <span class="st">&quot;HvyAlcoholConsump&quot;</span>)</span>
 <span id="cb82-2"><a href="#cb82-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/biv_alcohol-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb83-1"><a href="#cb83-1" tabindex="-1"></a>r<span class="sc">$</span>metricas <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -3123,12 +3129,12 @@ Tasa (Consumo excesivo)
 <p>Asociación inversa (V=0.0290): el grupo con consumo excesivo tiene menor tasa, posiblemente por el sesgo del “bebedor enfermo” que reduce su consumo al ser diagnosticado.</p>
 </div>
 <div id="anyhealthcare" class="section level4 hasAnchor" number="8.2.10">
-<h4><span class="header-section-number">8.2.10</span> AnyHealthcare<a href="#anyhealthcare" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">8.2.10</span> AnyHealthcare<a href="#anyhealthcare" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">biv_binaria</span>(<span class="st">&quot;AnyHealthcare&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Sin cobertura médica&quot;</span>,<span class="st">&quot;Con cobertura médica&quot;</span>), <span class="st">&quot;AnyHealthcare&quot;</span>)</span>
 <span id="cb84-2"><a href="#cb84-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/biv_healthcare-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1" tabindex="-1"></a>r<span class="sc">$</span>metricas <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -3185,12 +3191,12 @@ Tasa (Con cobertura médica)
 <p>La V más baja entre las binarias (0.0187), con sesgo de detección similar a CholCheck.</p>
 </div>
 <div id="nodocbccost" class="section level4 hasAnchor" number="8.2.11">
-<h4><span class="header-section-number">8.2.11</span> NoDocbcCost<a href="#nodocbccost" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">8.2.11</span> NoDocbcCost<a href="#nodocbccost" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb86"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb86-1"><a href="#cb86-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">biv_binaria</span>(<span class="st">&quot;NoDocbcCost&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Sin barrera económica&quot;</span>,<span class="st">&quot;Con barrera económica&quot;</span>), <span class="st">&quot;NoDocbcCost&quot;</span>)</span>
 <span id="cb86-2"><a href="#cb86-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/biv_nodoc-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb87-1"><a href="#cb87-1" tabindex="-1"></a>r<span class="sc">$</span>metricas <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -3247,12 +3253,12 @@ Tasa (Con barrera económica)
 <p>La barrera económica eleva la tasa al 12.41% vs 9.14%, con V=0.0310, reflejando desigualdades en acceso a atención preventiva.</p>
 </div>
 <div id="diffwalk" class="section level4 hasAnchor" number="8.2.12">
-<h4><span class="header-section-number">8.2.12</span> DiffWalk<a href="#diffwalk" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">8.2.12</span> DiffWalk<a href="#diffwalk" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb88"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb88-1"><a href="#cb88-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">biv_binaria</span>(<span class="st">&quot;DiffWalk&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Sin dificultad al caminar&quot;</span>,<span class="st">&quot;Con dificultad al caminar&quot;</span>), <span class="st">&quot;DiffWalk&quot;</span>)</span>
 <span id="cb88-2"><a href="#cb88-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/biv_diffwalk-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="#cb89-1" tabindex="-1"></a>r<span class="sc">$</span>metricas <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -3309,12 +3315,12 @@ Tasa (Con dificultad al caminar)
 <p><strong>DiffWalk tiene la mayor V de Cramér entre las variables binarias (0.2127)</strong>. Quienes reportan dificultad tienen una tasa 3.5 veces mayor (23.23% vs 6.62%).</p>
 </div>
 <div id="sex" class="section level4 hasAnchor" number="8.2.13">
-<h4><span class="header-section-number">8.2.13</span> Sex<a href="#sex" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">8.2.13</span> Sex<a href="#sex" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb90"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">biv_binaria</span>(<span class="st">&quot;Sex&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Mujer&quot;</span>,<span class="st">&quot;Hombre&quot;</span>), <span class="st">&quot;Sex&quot;</span>)</span>
 <span id="cb90-2"><a href="#cb90-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/biv_sex-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb91"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb91-1"><a href="#cb91-1" tabindex="-1"></a>r<span class="sc">$</span>metricas <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -3372,7 +3378,7 @@ Tasa (Hombre)
 </div>
 </div>
 <div id="variables-ordinales-1" class="section level3 hasAnchor" number="8.3">
-<h3><span class="header-section-number">8.3</span> Variables Ordinales<a href="#variables-ordinales-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">8.3</span> Variables Ordinales<a href="#variables-ordinales-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="sourceCode" id="cb92"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1" tabindex="-1"></a>biv_ordinal <span class="ot">&lt;-</span> <span class="cf">function</span>(var, etiquetas, titulo) {</span>
 <span id="cb92-2"><a href="#cb92-2" tabindex="-1"></a>  tasa <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
 <span id="cb92-3"><a href="#cb92-3" tabindex="-1"></a>    <span class="fu">group_by</span>(.data[[var]]) <span class="sc">%&gt;%</span></span>
@@ -3406,12 +3412,12 @@ Tasa (Hombre)
 <span id="cb92-31"><a href="#cb92-31" tabindex="-1"></a>  <span class="fu">list</span>(<span class="at">plot=</span>p, <span class="at">metricas=</span>metricas)</span>
 <span id="cb92-32"><a href="#cb92-32" tabindex="-1"></a>}</span></code></pre></div>
 <div id="genhlth" class="section level4 hasAnchor" number="8.3.1">
-<h4><span class="header-section-number">8.3.1</span> GenHlth<a href="#genhlth" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">8.3.1</span> GenHlth<a href="#genhlth" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb93"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb93-1"><a href="#cb93-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">biv_ordinal</span>(<span class="st">&quot;GenHlth&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Excelente&quot;</span>,<span class="st">&quot;Muy buena&quot;</span>,<span class="st">&quot;Buena&quot;</span>,<span class="st">&quot;Regular&quot;</span>,<span class="st">&quot;Mala&quot;</span>), <span class="st">&quot;GenHlth&quot;</span>)</span>
 <span id="cb93-2"><a href="#cb93-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/biv_genhlth-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb94"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1" tabindex="-1"></a>r<span class="sc">$</span>metricas <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -3468,14 +3474,14 @@ Tasa máxima
 <p><strong>GenHlth es el predictor individual más fuerte del dataset (V=0.2737)</strong>. La tasa sigue un gradiente perfectamente monótono desde 2.24% (“Excelente”) hasta 34.0% (“Mala”).</p>
 </div>
 <div id="age" class="section level4 hasAnchor" number="8.3.2">
-<h4><span class="header-section-number">8.3.2</span> Age<a href="#age" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">8.3.2</span> Age<a href="#age" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb95-1"><a href="#cb95-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">biv_ordinal</span>(<span class="st">&quot;Age&quot;</span>,</span>
 <span id="cb95-2"><a href="#cb95-2" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">&quot;18–24&quot;</span>,<span class="st">&quot;25–29&quot;</span>,<span class="st">&quot;30–34&quot;</span>,<span class="st">&quot;35–39&quot;</span>,<span class="st">&quot;40–44&quot;</span>,<span class="st">&quot;45–49&quot;</span>,</span>
 <span id="cb95-3"><a href="#cb95-3" tabindex="-1"></a>    <span class="st">&quot;50–54&quot;</span>,<span class="st">&quot;55–59&quot;</span>,<span class="st">&quot;60–64&quot;</span>,<span class="st">&quot;65–69&quot;</span>,<span class="st">&quot;70–74&quot;</span>,<span class="st">&quot;75–79&quot;</span>,<span class="st">&quot;80+&quot;</span>), <span class="st">&quot;Age&quot;</span>)</span>
 <span id="cb95-4"><a href="#cb95-4" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/biv_age-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb96"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb96-1"><a href="#cb96-1" tabindex="-1"></a>r<span class="sc">$</span>metricas <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -3532,14 +3538,14 @@ Tasa máxima
 <p>Gradiente monótono desde 0.51% (18–24) hasta 23.95% (80+), con V=0.2327.</p>
 </div>
 <div id="education" class="section level4 hasAnchor" number="8.3.3">
-<h4><span class="header-section-number">8.3.3</span> Education<a href="#education" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">8.3.3</span> Education<a href="#education" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb97-1"><a href="#cb97-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">biv_ordinal</span>(<span class="st">&quot;Education&quot;</span>,</span>
 <span id="cb97-2"><a href="#cb97-2" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">&quot;Sin escuela&quot;</span>,<span class="st">&quot;Primaria inc.&quot;</span>,<span class="st">&quot;Secundaria inc.&quot;</span>,</span>
 <span id="cb97-3"><a href="#cb97-3" tabindex="-1"></a>    <span class="st">&quot;Secundaria&quot;</span>,<span class="st">&quot;Univ. inc.&quot;</span>,<span class="st">&quot;Univ. completa&quot;</span>), <span class="st">&quot;Education&quot;</span>)</span>
 <span id="cb97-4"><a href="#cb97-4" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/biv_education-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="#cb98-1" tabindex="-1"></a>r<span class="sc">$</span>metricas <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -3596,14 +3602,14 @@ Tasa máxima
 <p>Gradiente <strong>inverso</strong> (V=0.1010): a mayor educación, menor tasa de HD (de 16.67% a 6.60%).</p>
 </div>
 <div id="income" class="section level4 hasAnchor" number="8.3.4">
-<h4><span class="header-section-number">8.3.4</span> Income<a href="#income" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">8.3.4</span> Income<a href="#income" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb99"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb99-1"><a href="#cb99-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">biv_ordinal</span>(<span class="st">&quot;Income&quot;</span>,</span>
 <span id="cb99-2"><a href="#cb99-2" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">&quot;&lt;$10k&quot;</span>,<span class="st">&quot;$10–15k&quot;</span>,<span class="st">&quot;$15–20k&quot;</span>,<span class="st">&quot;$20–25k&quot;</span>,</span>
 <span id="cb99-3"><a href="#cb99-3" tabindex="-1"></a>    <span class="st">&quot;$25–35k&quot;</span>,<span class="st">&quot;$35–50k&quot;</span>,<span class="st">&quot;$50–75k&quot;</span>,<span class="st">&quot;$75k+&quot;</span>), <span class="st">&quot;Income&quot;</span>)</span>
 <span id="cb99-4"><a href="#cb99-4" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/biv_income-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="#cb100-1" tabindex="-1"></a>r<span class="sc">$</span>metricas <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -3660,12 +3666,12 @@ Tasa máxima
 <p>El gradiente inverso más claro de las ordinales (V=0.1442): de 18.65% (&lt;$15k) a 5.07% (&gt;$75k).</p>
 </div>
 <div id="diabetes-1" class="section level4 hasAnchor" number="8.3.5">
-<h4><span class="header-section-number">8.3.5</span> Diabetes<a href="#diabetes-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">8.3.5</span> Diabetes<a href="#diabetes-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb101"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb101-1"><a href="#cb101-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">biv_ordinal</span>(<span class="st">&quot;Diabetes&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Sin diabetes&quot;</span>,<span class="st">&quot;Prediabetes&quot;</span>,<span class="st">&quot;Diabetes confirmada&quot;</span>), <span class="st">&quot;Diabetes&quot;</span>)</span>
 <span id="cb101-2"><a href="#cb101-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/biv_diabetes-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb102"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb102-1"><a href="#cb102-1" tabindex="-1"></a>r<span class="sc">$</span>metricas <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -3723,7 +3729,7 @@ Tasa máxima
 </div>
 </div>
 <div id="variables-continuas-1" class="section level3 hasAnchor" number="8.4">
-<h3><span class="header-section-number">8.4</span> Variables Continuas<a href="#variables-continuas-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">8.4</span> Variables Continuas<a href="#variables-continuas-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb103-1"><a href="#cb103-1" tabindex="-1"></a>biv_continua <span class="ot">&lt;-</span> <span class="cf">function</span>(var, titulo) {</span>
 <span id="cb103-2"><a href="#cb103-2" tabindex="-1"></a>  g0 <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">filter</span>(HeartDiseaseorAttack<span class="sc">==</span><span class="dv">0</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(.data[[var]])</span>
 <span id="cb103-3"><a href="#cb103-3" tabindex="-1"></a>  g1 <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">filter</span>(HeartDiseaseorAttack<span class="sc">==</span><span class="dv">1</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(.data[[var]])</span>
@@ -3754,12 +3760,12 @@ Tasa máxima
 <span id="cb103-28"><a href="#cb103-28" tabindex="-1"></a>  <span class="fu">list</span>(<span class="at">plot=</span>p, <span class="at">metricas=</span>metricas)</span>
 <span id="cb103-29"><a href="#cb103-29" tabindex="-1"></a>}</span></code></pre></div>
 <div id="bmi" class="section level4 hasAnchor" number="8.4.1">
-<h4><span class="header-section-number">8.4.1</span> BMI<a href="#bmi" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">8.4.1</span> BMI<a href="#bmi" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb104"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb104-1"><a href="#cb104-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">biv_continua</span>(<span class="st">&quot;BMI&quot;</span>, <span class="st">&quot;BMI&quot;</span>)</span>
 <span id="cb104-2"><a href="#cb104-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/biv_bmi-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="#cb105-1" tabindex="-1"></a>r<span class="sc">$</span>metricas <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -3832,12 +3838,12 @@ p-valor
 <p>Diferencia modesta (29.47 vs 28.27). El |r|=0.0529 indica poder discriminatorio limitado como predictor aislado, aunque contribuye en modelos multivariados.</p>
 </div>
 <div id="menthlth" class="section level4 hasAnchor" number="8.4.2">
-<h4><span class="header-section-number">8.4.2</span> MentHlth<a href="#menthlth" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">8.4.2</span> MentHlth<a href="#menthlth" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb106"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb106-1"><a href="#cb106-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">biv_continua</span>(<span class="st">&quot;MentHlth&quot;</span>, <span class="st">&quot;MentHlth&quot;</span>)</span>
 <span id="cb106-2"><a href="#cb106-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/biv_menthlth-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="#cb107-1" tabindex="-1"></a>r<span class="sc">$</span>metricas <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -3910,12 +3916,12 @@ p-valor
 <p>Diferencia de 1.6 días en promedio (4.67 vs 3.03), con |r|=0.0646. Ambos grupos tienen mediana 0, pero el grupo enfermo tiene colas más pesadas.</p>
 </div>
 <div id="physhlth" class="section level4 hasAnchor" number="8.4.3">
-<h4><span class="header-section-number">8.4.3</span> PhysHlth<a href="#physhlth" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h4 class="hasAnchor"><span class="header-section-number">8.4.3</span> PhysHlth<a href="#physhlth" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb108"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb108-1"><a href="#cb108-1" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">biv_continua</span>(<span class="st">&quot;PhysHlth&quot;</span>, <span class="st">&quot;PhysHlth&quot;</span>)</span>
 <span id="cb108-2"><a href="#cb108-2" tabindex="-1"></a><span class="fu">print</span>(r<span class="sc">$</span>plot)</span></code></pre></div>
 <p><img src="index_files/figure-html/biv_physhlth-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb109-1"><a href="#cb109-1" tabindex="-1"></a>r<span class="sc">$</span>metricas <span class="sc">%&gt;%</span> <span class="fu">kable</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_styling</span>(<span class="at">bootstrap_options=</span><span class="st">&quot;striped&quot;</span>, <span class="at">full_width=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -3989,7 +3995,7 @@ p-valor
 </div>
 </div>
 <div id="interacciones-entre-factores-de-riesgo" class="section level3 hasAnchor" number="8.5">
-<h3><span class="header-section-number">8.5</span> Interacciones entre factores de riesgo<a href="#interacciones-entre-factores-de-riesgo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">8.5</span> Interacciones entre factores de riesgo<a href="#interacciones-entre-factores-de-riesgo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Se exploran combinaciones de los factores con mayor V de Cramér para detectar efectos sinérgicos.</p>
 <div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="#cb110-1" tabindex="-1"></a><span class="co"># HighBP × HighChol</span></span>
 <span id="cb110-2"><a href="#cb110-2" tabindex="-1"></a>heat1 <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
@@ -4036,7 +4042,7 @@ p-valor
 </ul>
 </div>
 <div id="ranking-de-importancia-de-variables" class="section level3 hasAnchor" number="8.6">
-<h3><span class="header-section-number">8.6</span> Ranking de importancia de variables<a href="#ranking-de-importancia-de-variables" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">8.6</span> Ranking de importancia de variables<a href="#ranking-de-importancia-de-variables" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="sourceCode" id="cb111"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb111-1"><a href="#cb111-1" tabindex="-1"></a>scores <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(</span>
 <span id="cb111-2"><a href="#cb111-2" tabindex="-1"></a>  <span class="fu">map_dfr</span>(<span class="fu">c</span>(binary_vars, ordinal_vars), <span class="cf">function</span>(v) {</span>
 <span id="cb111-3"><a href="#cb111-3" tabindex="-1"></a>    ct     <span class="ot">&lt;-</span> <span class="fu">table</span>(df[[v]], df[[target_var]])</span>
@@ -4118,9 +4124,9 @@ p-valor
 </div>
 </div>
 <div id="síntesis-y-hallazgos-principales" class="section level2 hasAnchor" number="9">
-<h2><span class="header-section-number">9</span> Síntesis y Hallazgos Principales<a href="#s%C3%ADntesis-y-hallazgos-principales" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2 class="hasAnchor"><span class="header-section-number">9</span> Síntesis y Hallazgos Principales<a href="#s%C3%ADntesis-y-hallazgos-principales" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="factores-con-mayor-asociación" class="section level3 hasAnchor" number="9.1">
-<h3><span class="header-section-number">9.1</span> Factores con mayor asociación<a href="#factores-con-mayor-asociaci%C3%B3n" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">9.1</span> Factores con mayor asociación<a href="#factores-con-mayor-asociaci%C3%B3n" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>Factores clínicos y funcionales (alta magnitud):</strong></p>
 <ul>
 <li>La <strong>autopercepción de salud general</strong> (GenHlth, V=0.274) es el predictor más fuerte: tasa desde 2.2% (“Excelente”) hasta 34.0% (“Mala”).</li>
@@ -4139,7 +4145,7 @@ p-valor
 <p><strong>Determinantes socioeconómicos (gradientes inversos):</strong> A mayor ingreso y nivel educativo, menor tasa de HD.</p>
 </div>
 <div id="interacciones-sinérgicas" class="section level3 hasAnchor" number="9.2">
-<h3><span class="header-section-number">9.2</span> Interacciones sinérgicas<a href="#interacciones-sin%C3%A9rgicas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">9.2</span> Interacciones sinérgicas<a href="#interacciones-sin%C3%A9rgicas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>HTA + Colesterol alto → 21.1% (vs 2.8% sin ninguno)</li>
 <li>ACV + HTA → 42.0%</li>
@@ -4147,7 +4153,7 @@ p-valor
 </ul>
 </div>
 <div id="implicaciones-para-la-futura-modelación" class="section level3 hasAnchor" number="9.3">
-<h3><span class="header-section-number">9.3</span> Implicaciones para la futura modelación<a href="#implicaciones-para-la-futura-modelaci%C3%B3n" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3 class="hasAnchor"><span class="header-section-number">9.3</span> Implicaciones para la futura modelación<a href="#implicaciones-para-la-futura-modelaci%C3%B3n" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ol style="list-style-type: decimal">
 <li><strong>Desbalance de clases</strong> (90.6% vs 9.4%): requiere SMOTE, class_weight o umbralización personalizada.</li>
 <li><strong>Variables prioritarias</strong>: GenHlth, Age, DiffWalk, HighBP, Stroke y HighChol como features obligatorias.</li>
@@ -4158,7 +4164,7 @@ p-valor
 </div>
 </div>
 <div id="referencias-bibliográficas" class="section level2 hasAnchor" number="10">
-<h2><span class="header-section-number">10</span> Referencias bibliográficas<a href="#referencias-bibliogr%C3%A1ficas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2 class="hasAnchor"><span class="header-section-number">10</span> Referencias bibliográficas<a href="#referencias-bibliogr%C3%A1ficas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>American Heart Association. (2024). <em>Increasing number of Americans under 55 dying of severe heart attacks</em>. Journal of the American Heart Association. <a href="https://www.ahajournals.org" class="uri">https://www.ahajournals.org</a></p>
 <p>Centers for Disease Control and Prevention. (2015). <em>Behavioral Risk Factor Surveillance System (BRFSS) 2015 survey data</em>. U.S. Department of Health and Human Services. <a href="https://www.cdc.gov/brfss" class="uri">https://www.cdc.gov/brfss</a></p>
 <p>Teboul, A. (2021). <em>Heart disease health indicators dataset</em> [Dataset]. Kaggle. <a href="https://www.kaggle.com/datasets/alexteboul/heart-disease-health-indicators-dataset" class="uri">https://www.kaggle.com/datasets/alexteboul/heart-disease-health-indicators-dataset</a></p>
@@ -4167,67 +4173,19 @@ p-valor
 <p>Centers for Disease Control and Prevention. (2024). <em>About BRFSS</em>. <a href="https://www.cdc.gov/brfss/about/index.htm" class="uri">https://www.cdc.gov/brfss/about/index.htm</a></p>
 <p>IBM. (s.f.). <em>Exploratory data analysis</em>. <a href="https://www.ibm.com/mx-es/think/topics/exploratory-data-analysis" class="uri">https://www.ibm.com/mx-es/think/topics/exploratory-data-analysis</a></p>
 <p>MSD Manuals. (s.f.). <em>Insuficiencia cardíaca</em>. <a href="https://www.msdmanuals.com/es/hogar/trastornos-del-coraz%C3%B3n" class="uri">https://www.msdmanuals.com/es/hogar/trastornos-del-corazón</a></p>
-
+<!--chapter:end:index.Rmd-->
 </div>
+<!--bookdown:body:end-->
             </section>
 
           </div>
         </div>
       </div>
-
-
+<!--bookdown:link_prev-->
+<!--bookdown:link_next-->
     </div>
   </div>
-<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
-<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
-<script>
-gitbook.require(["gitbook"], function(gitbook) {
-gitbook.start({
-  "sharing": {
-    "github": false,
-    "facebook": true,
-    "twitter": true,
-    "linkedin": false,
-    "weibo": false,
-    "instapaper": false,
-    "vk": false,
-    "whatsapp": false,
-    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-  },
-  "fontsettings": {
-    "theme": "white",
-    "family": "sans",
-    "size": 2
-  },
-  "edit": {
-    "link": null,
-    "text": null
-  },
-  "history": {
-    "link": null,
-    "text": null
-  },
-  "view": {
-    "link": null,
-    "text": null
-  },
-  "download": null,
-  "search": {
-    "engine": "fuse",
-    "options": null
-  },
-  "toc": {
-    "collapse": "subsection"
-  }
-});
-});
-</script>
+<!--bookdown:config-->
 
 </body>
 

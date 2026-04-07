@@ -14,10 +14,10 @@ library(tidyverse)
 library(scales)
 library(knitr)
 library(kableExtra)
-library(coin)       # Mann-Whitney exacto
-library(rstatix)    # Chi2 + V de Cramer
-library(corrplot)
+library(coin)    
+library(rstatix)    
 library(patchwork)
+library(servr)
 
 # Paleta principal
 col_rojo  <- "#C0392B"
@@ -132,7 +132,7 @@ df %>%
   kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
 ```
 
-<table class="table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>(\#tab:estructura)(\#tab:estructura)Tipo de dato por variable</caption>
  <thead>
   <tr>
@@ -367,7 +367,7 @@ dict %>%
   kable_styling(bootstrap_options = c("striped","hover"), full_width = TRUE, font_size = 12)
 ```
 
-<table class="table table-striped table-hover" style="font-size: 12px; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover" style="font-size: 12px; color: black; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">(\#tab:diccionario)(\#tab:diccionario)Diccionario de variables</caption>
  <thead>
   <tr>
@@ -539,7 +539,7 @@ nulos %>% filter(Nulos > 0) %>%
   kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>(\#tab:nulos)(\#tab:nulos)Variables con valores nulos</caption>
  <thead>
   <tr>
@@ -576,7 +576,7 @@ tibble(
   kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>(\#tab:duplicados)(\#tab:duplicados)Registros duplicados</caption>
  <thead>
   <tr>
@@ -627,7 +627,7 @@ verificacion %>%
   column_spec(6, color=ifelse(verificacion$OK, "green", "red"))
 ```
 
-<table class="table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>(\#tab:rangos)(\#tab:rangos)Verificación de rangos por variable</caption>
  <thead>
   <tr>
@@ -856,7 +856,7 @@ conteos_obj %>%
   kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Clase </th>
@@ -923,7 +923,7 @@ print(r$plot)
 r$tabla %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Clase </th>
@@ -961,7 +961,7 @@ print(r$plot)
 r$tabla %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Clase </th>
@@ -999,7 +999,7 @@ print(r$plot)
 r$tabla %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Clase </th>
@@ -1037,7 +1037,7 @@ print(r$plot)
 r$tabla %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Clase </th>
@@ -1075,7 +1075,7 @@ print(r$plot)
 r$tabla %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Clase </th>
@@ -1113,7 +1113,7 @@ print(r$plot)
 r$tabla %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Clase </th>
@@ -1151,7 +1151,7 @@ print(r$plot)
 r$tabla %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Clase </th>
@@ -1189,7 +1189,7 @@ print(r$plot)
 r$tabla %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Clase </th>
@@ -1227,7 +1227,7 @@ print(r$plot)
 r$tabla %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Clase </th>
@@ -1265,7 +1265,7 @@ print(r$plot)
 r$tabla %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Clase </th>
@@ -1303,7 +1303,7 @@ print(r$plot)
 r$tabla %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Clase </th>
@@ -1341,7 +1341,7 @@ print(r$plot)
 r$tabla %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Clase </th>
@@ -1379,7 +1379,7 @@ print(r$plot)
 r$tabla %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Clase </th>
@@ -1533,7 +1533,7 @@ tibble(
   kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>(\#tab:bmi_stats)(\#tab:bmi_stats)Estadísticas descriptivas — BMI</caption>
  <thead>
   <tr>
@@ -1754,7 +1754,7 @@ print(r$plot)
 r$metricas %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Métrica </th>
@@ -1801,7 +1801,7 @@ print(r$plot)
 r$metricas %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Métrica </th>
@@ -1848,7 +1848,7 @@ print(r$plot)
 r$metricas %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Métrica </th>
@@ -1895,7 +1895,7 @@ print(r$plot)
 r$metricas %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Métrica </th>
@@ -1942,7 +1942,7 @@ print(r$plot)
 r$metricas %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Métrica </th>
@@ -1989,7 +1989,7 @@ print(r$plot)
 r$metricas %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Métrica </th>
@@ -2036,7 +2036,7 @@ print(r$plot)
 r$metricas %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Métrica </th>
@@ -2083,7 +2083,7 @@ print(r$plot)
 r$metricas %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Métrica </th>
@@ -2130,7 +2130,7 @@ print(r$plot)
 r$metricas %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Métrica </th>
@@ -2177,7 +2177,7 @@ print(r$plot)
 r$metricas %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Métrica </th>
@@ -2224,7 +2224,7 @@ print(r$plot)
 r$metricas %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Métrica </th>
@@ -2271,7 +2271,7 @@ print(r$plot)
 r$metricas %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Métrica </th>
@@ -2318,7 +2318,7 @@ print(r$plot)
 r$metricas %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Métrica </th>
@@ -2403,7 +2403,7 @@ print(r$plot)
 r$metricas %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Métrica </th>
@@ -2452,7 +2452,7 @@ print(r$plot)
 r$metricas %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Métrica </th>
@@ -2501,7 +2501,7 @@ print(r$plot)
 r$metricas %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Métrica </th>
@@ -2550,7 +2550,7 @@ print(r$plot)
 r$metricas %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Métrica </th>
@@ -2597,7 +2597,7 @@ print(r$plot)
 r$metricas %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Métrica </th>
@@ -2679,7 +2679,7 @@ print(r$plot)
 r$metricas %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Métrica </th>
@@ -2734,7 +2734,7 @@ print(r$plot)
 r$metricas %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Métrica </th>
@@ -2789,7 +2789,7 @@ print(r$plot)
 r$metricas %>% kable() %>% kable_styling(bootstrap_options="striped", full_width=FALSE)
 ```
 
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Métrica </th>
