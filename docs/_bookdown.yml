@@ -1,0 +1,3 @@
+book_filename: "EDA_BRFSS2015"
+output_dir: "docs"
+new_session: true
